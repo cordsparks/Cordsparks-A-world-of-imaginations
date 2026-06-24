@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CordSparks — A world of imaginations.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Cord<span>Sparks</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">Est. 2024 · Technology Company</div>
+      <h1 class="hero-title">
+        <span class="hero-word" data-delay="0">Cord</span><span class="hero-word spark" data-delay="100">Sparks</span>
+      </h1>
+      <p class="hero-tagline">A world of imaginations.</p>
+      <p class="hero-desc">We craft innovative digital experiences — from intelligent software and mobile apps to cybersecurity, AI, and beyond. Your vision, brought to life with precision and creativity.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Services</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">9+</span><span class="stat-label">Technologies</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <canvas id="aboutCanvas"></canvas>
+          <div class="about-badge-float">Innovation</div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Who We Are</p>
+          <h2 class="section-title">Transforming ideas into <span class="accent">digital experiences</span></h2>
+          <p class="about-body">CordSparks is a technology company focused on transforming ideas into digital experiences through software, cybersecurity, AI, and creative technology. We don't just build products — we architect futures.</p>
+          <p class="about-body">Founded by a young developer with a drive to solve real-world problems, CordSparks brings together engineering depth and creative vision to deliver solutions that matter.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">⚡</div>
+              <div>
+                <h4>Speed</h4>
+                <p>Fast delivery without compromising quality</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🔒</div>
+              <div>
+                <h4>Security</h4>
+                <p>Security-first approach in every build</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">🧠</div>
+              <div>
+                <h4>Intelligence</h4>
+                <p>AI-augmented development pipelines</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <p class="section-eyebrow center">What We Do</p>
+      <h2 class="section-title center">Our <span class="accent">Services</span></h2>
+      <p class="section-sub center">From concept to deployment — we handle the full spectrum of digital product development.</p>
+      <div class="services-grid">
+
+        <div class="service-card" data-index="0">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="22" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M13 36h14M20 30v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 18l4 4-4 4M18 26h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>High-performance websites and web apps built with modern frameworks, optimized for speed, SEO, and seamless user experience.</p>
+          <div class="card-tags"><span>React</span><span>Node.js</span><span>Next.js</span></div>
+        </div>
+
+        <div class="service-card" data-index="1">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="12" y="4" width="16" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="30" r="1.5" fill="currentColor"/><path d="M16 8h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>App Development</h3>
+          <p>Native and cross-platform mobile apps that deliver exceptional UX on iOS and Android. Built for performance and scale.</p>
+          <div class="card-tags"><span>React Native</span><span>Flutter</span></div>
+        </div>
+
+        <div class="service-card" data-index="2">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6L8 12v8c0 7.18 5.16 13.9 12 15.5C27.84 33.9 33 27.18 33 20v-8L20 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M15 20l3 3 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Penetration testing, vulnerability assessments, and security architecture to keep your systems bulletproof and compliant.</p>
+          <div class="card-tags"><span>Pen Testing</span><span>Audits</span></div>
+        </div>
+
+        <div class="service-card" data-index="3">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 20l4-4 4 4 4-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="20" r="1.5" fill="currentColor"/></svg>
+          </div>
+          <h3>Game Development</h3>
+          <p>Immersive 2D and 3D game experiences across web and desktop — from mechanics design to launch-ready builds.</p>
+          <div class="card-tags"><span>Unity</span><span>Three.js</span><span>WebGL</span></div>
+        </div>
+
+        <div class="service-card" data-index="4">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M20 8v4M20 28v4M8 20h4M28 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 12l2.8 2.8M25.2 25.2L28 28M28 12l-2.8 2.8M14.8 25.2L12 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>AI Solutions</h3>
+          <p>Custom AI integrations, machine learning pipelines, and intelligent automation tools built to augment your workflow.</p>
+          <div class="card-tags"><span>Python</span><span>LLMs</span><span>ML</span></div>
+        </div>
+
+        <div class="service-card" data-index="5">
+          <div class="card-glow"></div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M6 15h5M29 15h5M6 25h5M29 25h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Human-centred design that converts. Wireframes, prototypes, and polished interfaces that users love to navigate.</p>
+          <div class="card-tags"><span>Figma</span><span>Research</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-eyebrow center">What We've Built</p>
+      <h2 class="section-title center">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-img project-img-1">
+            <div class="project-overlay"></div>
+            <div class="project-badge">IoT · Mobile</div>
+          </div>
+          <div class="project-info">
+            <h3>Smart Cycling System</h3>
+            <p>An intelligent IoT bike system featuring real-time battery monitoring, integrated sensors, precision distance detection, tire pressure monitoring, and a companion mobile app — all connected via Bluetooth mesh.</p>
+            <div class="project-tags"><span>IoT</span><span>React Native</span><span>Python</span><span>Bluetooth</span></div>
+            <a href="bike.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img project-img-2">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Web App</div>
+          </div>
+          <div class="project-info">
+            <h3>Recipe It</h3>
+            <p>A beautiful recipe management platform with smart ingredient parsing, meal planning, nutritional insights, and community sharing features built for home cooks and professionals alike.</p>
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <a href="recipe-it.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img project-img-3">
+            <div class="project-overlay"></div>
+            <div class="project-badge">Web App</div>
+          </div>
+          <div class="project-info">
+            <h3>Route_pulse</h3>
+            <p> a smart routing and tracking concept designed to improve how users understand movement and navigation. It focuses on analyzing routes, monitoring movement patterns, and providing intelligent insights for better decision-making.</p>
+            <div class="project-tags"><span>html</span><span>css</span><span>JavaScript</span><span>Php</span><span>mysql</span></div>
+            <a href="route_pulse.html" class="project-link">View Case Study <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card project-incoming">
+          <div class="project-img project-img-4">
+            <div class="project-overlay"></div>
+            <div class="project-badge">AI · 2026</div>
+          </div>
+          <div class="project-info">
+            <h3>Future AI Projects</h3>
+            <p>The next chapter — intelligent applications that blur the line between human and machine. Projects in stealth mode, arriving soon. Stay tuned for something extraordinary.</p>
+            <div class="project-tags"><span>LLMs</span><span>Python</span><span>AI APIs</span></div>
+            <a href="Ai.html" class="project-link">Get Early Access <span>→</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-eyebrow center">Our Stack</p>
+      <h2 class="section-title center">Technologies <span class="accent">We Master</span></h2>
+      <div class="skills-orbit-wrapper">
+        <canvas id="skillsCanvas"></canvas>
+        <div class="skills-grid">
+          <div class="skill-chip" data-level="95"><div class="skill-inner"><span class="skill-name">HTML</span><div class="skill-bar"><div class="skill-fill" style="--pct:95%"></div></div></div></div>
+          <div class="skill-chip" data-level="90"><div class="skill-inner"><span class="skill-name">CSS</span><div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div></div></div>
+          <div class="skill-chip" data-level="88"><div class="skill-inner"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--pct:88%"></div></div></div></div>
+          <div class="skill-chip" data-level="85"><div class="skill-inner"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div></div></div>
+          <div class="skill-chip" data-level="87"><div class="skill-inner"><span class="skill-name">php</span><div class="skill-bar"><div class="skill-fill" style="--pct:87%"></div></div></div></div>
+          <div class="skill-chip" data-level="80"><div class="skill-inner"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div></div></div>
+          <div class="skill-chip" data-level="83"><div class="skill-inner"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--pct:83%"></div></div></div></div>
+          <div class="skill-chip" data-level="90"><div class="skill-inner"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div></div></div>
+          <div class="skill-chip" data-level="78"><div class="skill-inner"><span class="skill-name">AI Tools</span><div class="skill-bar"><div class="skill-fill" style="--pct:78%"></div></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section id="founder">
+    <div class="container">
+      <p class="section-eyebrow center">Behind CordSparks</p>
+      <h2 class="section-title center">Meet the <span class="accent">Founder</span></h2>
+      <div class="founder-card">
+        <div class="founder-avatar-wrap">
+          <div class="founder-avatar">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="38" r="18" stroke="#00d4ff" stroke-width="1.5"/>
+              <path d="M16 90c0-18.78 15.22-34 34-34s34 15.22 34 34" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="founder-glow-ring"></div>
+        </div>
+        <div class="founder-info">
+          <h3 class="founder-name">Elsie Muniu</h3>
+          <p class="founder-title">Founder & Lead Developer</p>
+          <blockquote class="founder-quote">“Every line of code starts as a spark of imagination.”</blockquote>
+          <p class="founder-bio">Elsie is a young developer, creator, writer, and technology enthusiast passionate about building solutions that help people. With a multidisciplinary approach spanning software engineering, cybersecurity, and creative technology, she founded CordSparks to be the kind of company she always wanted to work with — fast, honest, and genuinely innovative.</p>
+          <div class="founder-links">
+            <a href="https://github.com/cordsparks" class="founder-social" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://instagram.com/whos_3os" class="founder-social" aria-label="Instagram">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M7.75 2h8.5A5.76 5.76 0 0122 7.75v8.5A5.76 5.76 0 0116.25 22h-8.5A5.76 5.76 0 012 16.25v-8.5A5.76 5.76 0 017.75 2zm0 1.5A4.26 4.26 0 003.5 7.75v8.5A4.26 4.26 0 007.75 20.5h8.5a4.26 4.26 0 004.25-4.25v-8.5A4.26 4.26 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5A3.5 3.5 0 1015.5 12 3.5 3.5 0 0012 8.5zM17.8 6.2a1 1 0 11-1 1 1 1 0 011-1z"/>
+  </svg>
+</a>
+            <a href="https://x.com/Gentlepen_13" class="founder-social" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-eyebrow center">Get In Touch</p>
+      <h2 class="section-title center">Let's Build <span class="accent">Together</span></h2>
+      <p class="section-sub center">Have an idea? A project? Just want to say hello? We'd love to hear from you.</p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:muniuelsie@gmail.com">muniuelsie@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Nairobi, Kenya · Remote-first</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏱</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/cordsparks" class="social-link">GitHub</a>
+            <a href="https://instagram.com/whos_3os" class="social-link">Instagram</a>
+            <a href="https://x.com/Gentlepen_13" class="social-link">Twitter</a>
+            <a href="https://www.behance.net/elsiemuniu" class="social-link">Behance</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane" autocomplete="given-name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option>Web Development</option>
+              <option>App Development</option>
+              <option>Cybersecurity</option>
+              <option>Game Development</option>
+              <option>AI Solutions</option>
+              <option>UI/UX Design</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ⚡</button>
+          <p class="form-note">By submitting, you agree to our privacy policy.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">Cord<span>Sparks</span></a>
+          <p>A world of Imaginations.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 CordSparks. All rights reserved.</p>
+        <p class="footer-mono">Built with ⚡ by Elsie Muniu</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
